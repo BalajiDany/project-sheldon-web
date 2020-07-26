@@ -31,7 +31,7 @@ const Home = (props: Props) => {
             <Helmet>
                 <title>Home</title>
             </Helmet>
-            <Link to='/about'>About</Link>
+            <Link to='/about'>This is an link to About</Link>
             <h1>Home</h1>
             { props.posts ? props.posts.map((post, index) => <h3 key={index}>{post.title}</h3>) : <LoadingScreen /> }
         </div>
