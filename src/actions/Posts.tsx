@@ -20,7 +20,9 @@ export const syncPosts = () => {
     return (dispatch: Dispatch) => {
         jsonPlaceholderApi.get('posts')
             .then(res => {
-                dispatch(setPosts(res.data.slice(0, 10) || []));
+                setTimeout(() => {
+                    dispatch(setPosts(res.data.slice(0, 10) || []));
+                }, 2000);
             })
             .catch(err => {
                 console.log(err);
