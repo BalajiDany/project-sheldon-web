@@ -31,7 +31,7 @@ const Home = (props: Props) => {
             <Helmet>
                 <title>Home</title>
             </Helmet>
-            <Link to='/about'>This is an link to About</Link>
+            <Link to='/about'>Now to check the GZIP Update</Link>
             <h1>Now Both in Firebase and aws S3</h1>
             { props.posts ? props.posts.map((post, index) => <h3 key={index}>{post.title}</h3>) : <LoadingScreen /> }
         </div>
