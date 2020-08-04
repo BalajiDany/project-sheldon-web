@@ -23,6 +23,7 @@ const Home = (props: Props) => {
     // Seperate function to bypass eslint warning
     const onComponentDidLoad = () => {
         syncPosts && syncPosts();
+        console.log('on use Effects call')
     };
     useEffect(onComponentDidLoad, []);
 

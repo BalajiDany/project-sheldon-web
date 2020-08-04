@@ -18,7 +18,7 @@ const MainRouter = () => {
                         // Exact is not mentioned to hook nested Routing
                         // path can also accept list of string path={['/', '/home']}
                     }
-                    <Route path={['/about', '/about/:name']} exact component={AboutPage} />
+                    <Route path={['/about', '/about/:name']} component={AboutPage} />
                     <Route path='/' component={HomePage} />
                 </Switch>
             </Suspense>
